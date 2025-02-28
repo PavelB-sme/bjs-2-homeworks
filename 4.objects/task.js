@@ -19,10 +19,10 @@ Student.prototype.addMarks = function(...marks) {
 Student.prototype.getAverage = function() {
   if (this.hasOwnProperty('marks') === false) {
     return 0;
-  } else {
+  }
     return this.marks.reduce((a, b) => a + b /
       this.marks.length, 0)
-  }
+
 }
 
 Student.prototype.exclude = function(reason) {
