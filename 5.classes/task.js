@@ -60,13 +60,10 @@ class DetectiveBook extends Book {
   }
 }
 
-class Library extends PrintEditionItem{
-  constructor (name, releaseDate, pagesCount, state = 100, type = null) {
-    super(name, releaseDate, pagesCount, state, type);
+class Library {
+  constructor (name, books) {
     this.name = name;
     this.books = [];
-    this.state = state;
-    this.type = type;
   }
 
   addBook(book) {
